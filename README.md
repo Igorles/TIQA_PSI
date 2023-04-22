@@ -1,6 +1,6 @@
 % TIQA-PSI: Toolbox for Perceptual Image Quality Assessment of Pan-Sharpened Images
 % Author:
-% Igor Stepien, Mariusz Oszust
+% Igor Stępień, Mariusz Oszust
 
 ## Installation
 Requires:
