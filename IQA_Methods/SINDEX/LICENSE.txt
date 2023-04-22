@@ -1,0 +1,44 @@
+%---------------------------- s_index ----------------------------
+
+% Compute the simplified sharpness index (S) of a numerical image
+%
+%               author: Lionel Moisan
+%
+%  This program is freely available on the web page
+%
+%     http://www.mi.parisdescartes.fr/~moisan/sharpness/
+%
+%  It implements the S Index described in the paper
+
+% You may freely use the programs given below. If you do, please make reference to this web page and to the corresponding paper.
+% If you want to distribute the codes, please do not modify them (or if you do so, indicate clearly in the codes that you did).
+
+%  A. Leclaire, L. Moisan, No-reference image quality assessment 
+%  and blind deblurring with sharpness metrics exploiting Fourier 
+%  phase information, preprint MAP5 n° 2014-03, 2014.
+%
+%  If you use it for a publication, please mention this paper
+%  If you modify this program, please indicate in the code that you 
+%  did so and leave this message.
+%  You can report bugs or suggestions to lionel.moisan [AT] parisdescartes.fr
+%
+% usage:    s = s_index(u)   or   s = s_index(u,pmode) 
+%
+% u is an image (a 2D array = a Matlab matrix)
+%
+% available preprocessing modes are:
+%
+% pmode = 0             raw S index of u
+% pmode = 1             S index of the periodic component of u 
+% pmode = 2             S index of the 1/2,1/2-translated of u 
+% pmode = 3 (default)   S index of the 1/2,1/2-translated 
+%                       of the periodic component of u
+%
+% Default mode (pmode = 3) should be used, unless you want to work on very
+% specific images that are naturally periodic or not quantized (see paper)
+%
+% note: this function also works for 1D signals (line or column vectors)
+%
+% v1.0 (02/2014): initial version from s_index.sci v1.2
+
+% dependencies: dequant, perdecomp, logerfc

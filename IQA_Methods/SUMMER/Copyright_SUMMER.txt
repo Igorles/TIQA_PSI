@@ -1,0 +1,27 @@
+___________________________________________________________________________________________________________________________________
+Author  : 	Dogancan Temel 
+PI	:	Ghassan AlRegib
+Version :	1.0
+
+The author is with Multimedia and Sensors Lab (MSL), Center for Signal and Information Processing, Georgia Institute of Technology, 
+Atlanta, GA. Kindly report any suggestions or corrections to dcantemel@gmail.com.
+___________________________________________________________________________________________________________________________________
+_____________________________________________________COPYRIGHT NOTICE______________________________________________________________ 
+Copyright (c) 2018 Georgia Institute of Technology, Multimedia and Sesnors Lab.
+All rights reserved.
+___________________________________________________________________________________________________________________________________
+Please, cite the following paper in your publication if you use this script.
+___________________________________________________________________________________________________________________________________
+Plain text:
+1) D. Temel and G. AlRegib, "Perceptual Image Quality Assessment through Spectral Analysis of Error Representations", Signal Processing: Image Communication, 2018
+
+BibTeX:
+@article{Temel_SPIC_2018,
+title = "Perceptual Image Quality Assessment through Spectral Analysis of Error Representations",
+journal = "Signal Processing: Image Communication ",
+year = "2018",
+author = "Dogancan Temel and Ghassan AlRegib",
+}
+
+
+___________________________________________________________________________________________________________________________________
