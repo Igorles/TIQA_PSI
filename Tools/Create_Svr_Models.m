@@ -134,31 +134,7 @@ if ismember('NOREQI',IQA)
     end
     clear feat
 end
-% % % % % % % % % % % % % % % % %% SINDEX
-% % % % % % % % % % % % % % % % if ismember('SINDEX',IQA)
-% % % % % % % % % % % % % % % % 
-% % % % % % % % % % % % % % % %     val=val+1;
-% % % % % % % % % % % % % % % %     disp(strcat(num2str(val),'/',num2str(sum(wynik)),' Create Svr model for SINDEX'))
-% % % % % % % % % % % % % % % % 
-% % % % % % % % % % % % % % % % %     if ~exist(fullfile('IQA_Methods',filesep,'SINDEX',filesep',strcat('model_',num2str(Flag),'.mat')), 'file')
-% % % % % % % % % % % % % % % % 
-% % % % % % % % % % % % % % % %         for j=1:length(DMOS_PC_TC)
-% % % % % % % % % % % % % % % % 
-% % % % % % % % % % % % % % % %             featTmpPC=s_index(imread(PC_img{j}));
-% % % % % % % % % % % % % % % %             featTmpTC=s_index(imread(TC_img{j}));
-% % % % % % % % % % % % % % % %             feat(j,:) = [featTmpTC featTmpPC];
-% % % % % % % % % % % % % % % % 
-% % % % % % % % % % % % % % % %         end
-% % % % % % % % % % % % % % % % 
-% % % % % % % % % % % % % % % %         minyO=min(feat);  %1) Different features have different ranges. Find them.
-% % % % % % % % % % % % % % % %         maxyO=max(feat);
-% % % % % % % % % % % % % % % %         feat=double(normVec(feat,maxyO,minyO));
-% % % % % % % % % % % % % % % %         model_SINDEX = svmtrain(DMOS_PC_TC, feat, '-s 3 -q');
-% % % % % % % % % % % % % % % %         save(strcat(pwd,filesep,'IQA_Methods',filesep,'SINDEX',filesep',strcat('model_',num2str(Flag),'.mat')),'model_SINDEX','minyO','maxyO')
-% % % % % % % % % % % % % % % % 
-% % % % % % % % % % % % % % % % %     end
-% % % % % % % % % % % % % % % %     clear feat
-% % % % % % % % % % % % % % % % end
+
 %% SSEQ
 if ismember('SSEQ',IQA)
 

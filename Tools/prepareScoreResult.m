@@ -307,9 +307,7 @@ for i=1:size(namesIqa,1)
     P = [P; tym'];
 end
 
-P = round(P, 4);
-
-% if ~isempty(algorithms)
+P = arrayfun(@(x)num2str(x, '%.10f'), P, 'UniformOutput', false);
 
 fig = uifigure('Unit','normalized','Position',[0 0 0.7 0.9]);
 g = uigridlayout(fig,[2 1]);

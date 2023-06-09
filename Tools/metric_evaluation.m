@@ -22,7 +22,7 @@ try
 	[ypre junk] = nlpredci(@logistic,objective,bayta,ehat,J);
 	%eres=abs(ypre-subjective)
 	
-	RMSE = (sqrt(sum((ypre - subjective).^2) / length(subjective)));
+% 	RMSE = (sqrt(sum((ypre - subjective).^2) / length(subjective)));
 	pearson = (corr(subjective, ypre, 'type','Pearson')) ;
 
 	
@@ -30,6 +30,6 @@ catch %just in case
 	spearman=0;
 	kendall=0;    
 	pearson=0;    
-	RMSE=0;    
+% 	RMSE=0;    
 end
-eval=[spearman,kendall,pearson,RMSE ];
+eval=[spearman,kendall,pearson ];

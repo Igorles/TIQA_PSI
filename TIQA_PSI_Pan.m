@@ -5,7 +5,7 @@ IQA = { %Full-Reference methods 18
     'VIF','SSIM','SAM','HaarPSI','MDSI',...
     ... 'DISTS', 'ERGAS', 'IFC', 'MS-UNIQUE', 'Q', 'Q2n', 'ReSIFT', 'SCC', 'SUMMER', 'SVD', 'MULTISSIM', 'PerSIM', 'UNIQUE',...	
     ... No-Reference methods 13
-    'BLINDER','DIVINE','MLPSIE','SINQ'
+    'BLINDER','DIVINE','MLPSIE'
     ... 'BRISQUE', 'CEIQ', 'FRIQUEE', 'GWH-GLBP-BIQA', 'NIQE', 'NOREQI', 'SINDEX', 'SR-metric', 'SSEQ',
      };
 PC_img = strcat(pwd,filesep,'Database',filesep,'SS',filesep,PC_img); 

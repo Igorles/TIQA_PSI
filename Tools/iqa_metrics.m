@@ -120,15 +120,6 @@ if (isempty(images2) && isempty(imagesRef2))
             [score.SSEQ{i}, ~, ~] = svmpredict(1,feat, model_SSEQ ,' -q');
             cd ../..
         end
-        %% SINQ
-        if ismember('SINQ',IQA)
-            temp = temp+1;
-            disp(strcat(num2str(temp),'/',num2str(val),' IQA method SINQ Rates the image'," ",num2str(i),'/',num2str(x)))
-
-            cd(strcat(pwd,filesep,'IQA_Methods',filesep,'SINQ'))
-            score.SINQ{i} = compute_score_SINQ(img);
-            cd ../..
-        end
         %% DIVINE
         if ismember('DIVINE',IQA)
             temp = temp+1;
@@ -481,17 +472,6 @@ if ~isempty(images2)
             feat=double(normVec(feat,maxyO,minyO));
             feat(isnan(feat))=0;
             [score.SSEQ{i}, ~, ~] = svmpredict(1,feat, model_SSEQ ,' -q');
-            cd ../..
-        end
-        %% SINQ
-        if ismember('SINQ',IQA)
-            temp = temp+1;
-            disp(strcat(num2str(temp),'/',num2str(val),' IQA method SINQ Rates the image'," ",num2str(i),'/',num2str(x)))
-
-            cd(strcat(pwd,filesep,'IQA_Methods',filesep,'SINQ'))
-            scoreTmp = compute_score_SINQ(img);
-            scoreTmp2 = compute_score_SINQ(img2);
-            score.SINQ{i} = sqrt(abs(scoreTmp*scoreTmp2));
             cd ../..
         end
         %% DIVINE

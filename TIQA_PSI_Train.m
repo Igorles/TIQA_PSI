@@ -8,7 +8,7 @@ IQA = {... Full-Reference methods 18
     ... No-Reference methods 13
     'MLPSIE','SINDEX','DIVINE','BRISQUE'
     ... 'BLINDER','CEIQ','FRIQUEE','GWH-GLBP-BIQA',
-    ... 'NIQE','NOREQI','SINQ','SR-metric','SSEQ'
+    ... 'NIQE','NOREQI','SR-metric','SSEQ'
     };
 tiqapsitrainHelper % script preparing the database for the popular 80:20 
 result = createTableResult(resultTmp,names) 

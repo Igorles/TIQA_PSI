@@ -1,13 +1,13 @@
 function result = createTableResult(resultTmp,names)
 
-result = {'IQA Methods','Spearman','Kendall','Pearson','RMSE'};
-for j=2:(size(resultTmp,2)+1)
+result = {'IQA Methods','Spearman','Kendall','Pearson'};
+for j=2:(size(names,1)+1)
     tmp = median(resultTmp{j-1});
     result{j,1}= names{j-1};
     result{j,2} = tmp(1);
     result{j,3} = tmp(2);
     result{j,4} = tmp(3);
-    result{j,5} = tmp(4);
+
 end
 
 
