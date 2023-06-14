@@ -4,7 +4,7 @@ load(strcat(pwd,filesep,'Database',filesep,'Dataset',filesep,'Test(HxWxC)_wv2_da
 IQA = { %Full-Reference methods 18
     'VIF','SSIM','SAM','HaarPSI','MDSI',...
     ... 'DISTS', 'ERGAS', 'IFC', 'MS-UNIQUE', 'Q', 'Q2n', 'ReSIFT', 'SCC', 'SUMMER', 'SVD', 'MULTISSIM', 'PerSIM', 'UNIQUE',...	
-    ... No-Reference methods 13
+    ... No-Reference methods 12
     'BLINDER','DIVINE','MLPSIE'
     ... 'BRISQUE', 'CEIQ', 'FRIQUEE', 'GWH-GLBP-BIQA', 'NIQE', 'NOREQI', 'SINDEX', 'SR-metric', 'SSEQ',
      };

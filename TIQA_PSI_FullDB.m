@@ -3,9 +3,9 @@ load Mos_imgs.mat
 IQA = {... Full-Reference methods 18
     'SVD','ERGAS','Q2n','Q','SCC',...
     ...'DISTS', 'HaarPSI', 'IFC', 'MDSI', 'MS-UNIQUE', 'ReSIFT', 'SAM', 'SUMMER', 'VIF', 'SSIM', 'MULTISSIM', 'PerSIM', 'UNIQUE',...
-    ... No-Reference methods 13
+    ... No-Reference methods 12
     'BRISQUE','MLPSIE','NOREQI','SSEQ','SINDEX'
-	...'BLINDER', 'CEIQ', 'DIVINE', 'FRIQUEE', 'GWH-GLBP-BIQA', 'NIQE', 'SINDEX', 'SR-metric'
+	...'BLINDER', 'CEIQ', 'DIVINE', 'FRIQUEE', 'GWH-GLBP-BIQA', 'NIQE', 'SR-metric'
     };
 PC_img = strcat(pwd,filesep,'Database',filesep,'SS',filesep,PC_img);
 TC_img = strcat(pwd,filesep,'Database',filesep,'SS',filesep,TC_img);

@@ -5,7 +5,7 @@ IQA = {... Full-Reference methods 18
     'Q','Q2n','SSIM','ERGAS',...
     ...'DISTS','HaarPSI','IFC','MDSI','MS-UNIQUE',
     ...'ReSIFT','SAM','SCC','SUMMER','SVD','VIF','MULTISSIM','PerSIM','UNIQUE',...	
-    ... No-Reference methods 13
+    ... No-Reference methods 12
     'MLPSIE','SINDEX','DIVINE','BRISQUE'
     ... 'BLINDER','CEIQ','FRIQUEE','GWH-GLBP-BIQA',
     ... 'NIQE','NOREQI','SR-metric','SSEQ'
